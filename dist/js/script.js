@@ -91,6 +91,8 @@ form.addEventListener('submit', (e) => {
       // Tampilkan Alert
       myAlert.classList.toggle('hidden');
       console.log('Success!', response);
+      // Reset formnya
+      form.reset();
     })
     .catch((error) => console.error('Error!', error.message));
 });
