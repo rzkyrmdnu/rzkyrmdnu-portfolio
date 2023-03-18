@@ -86,6 +86,15 @@ if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.match
   darkToggle.checked = false;
 }
 
+// Animation Loading
+onload = function () {
+  let loading = document.getElementById('loader');
+
+  setTimeout(() => {
+    loading.style.display = 'none';
+  }, 3000);
+};
+
 // Contact Form
 const scriptURL = 'https://script.google.com/macros/s/AKfycbwxIXcIalRv6_FL-UNQwgqmuc5B6TaX9r0JZopNrLbdr9e2CPrav5zmnkT-9PqTsQHeUA/exec';
 const form = document.forms['contact-form'];

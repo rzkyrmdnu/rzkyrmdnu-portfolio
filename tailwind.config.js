@@ -19,6 +19,19 @@ module.exports = {
       screens: {
         '2xl': '1320px',
       },
+      keyframes: {
+        animate: {
+          '0%,10%,100%': {
+            width: '0%',
+          },
+          '70%,80%,90%': {
+            width: '100%',
+          },
+        },
+      },
+    },
+    animation: {
+      animate: 'animate 3s linear infinite',
     },
   },
   plugins: [],
