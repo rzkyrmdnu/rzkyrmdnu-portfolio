@@ -30,7 +30,7 @@
 
 @layer utilities {
   .name {
-    @apply relative text-4xl font-black uppercase text-white dark:text-dark md:text-8xl;
+    @apply relative text-4xl font-black uppercase text-transparent md:text-8xl;
   }
   .name::before {
     @apply absolute top-0 left-0 h-[100%] w-0 animate-animate overflow-hidden border-r-4 border-sky text-sky content-['rzkyrmdnu'];
