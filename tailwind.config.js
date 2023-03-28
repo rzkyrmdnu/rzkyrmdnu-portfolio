@@ -28,10 +28,15 @@ module.exports = {
             width: '100%',
           },
         },
+        spin: {
+          '0%': { transform: 'rotate(0deg)' },
+          '100%': { transform: 'rotate(360deg)' },
+        },
       },
     },
     animation: {
       animate: 'animate 3s linear infinite',
+      spin: 'spin 1s linear infinite',
     },
   },
   plugins: [],
